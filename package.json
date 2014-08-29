@@ -1,0 +1,38 @@
+{
+  "name": "convert-base",
+  "version": "0.0.0",
+  "description": "Convert from one base to another: Hex, Binary, Decimal, Octal",
+  "main": "dist/convert-base.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://pasangsherpa@github.com/pasangsherpa/convert-base.git"
+  },
+  "keywords": [
+    "hex-to-dec",
+    "dec-to-hex",
+    "bin-to-hex",
+    "hex-to-bin",
+    "dec-to-bin",
+    "bin-to-dec",
+    "number-system"
+  ],
+  "author": "Pasang Sherpa <pgyalzen@gmail.com> (https://github.com/pasangsherpa)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pasangsherpa/convert-base/issues"
+  },
+  "homepage": "https://github.com/pasangsherpa/convert-base",
+  "devDependencies": {
+    "gulp": "~3.8.7",
+    "gulp-concat": "~2.3.4",
+    "gulp-header": "~1.0.5",
+    "gulp-jshint": "~1.8.4",
+    "gulp-load-plugins": "~0.5.3",
+    "gulp-rename": "~1.2.0",
+    "gulp-uglify": "~0.3.1",
+    "mocha": "*"
+  }
+}
