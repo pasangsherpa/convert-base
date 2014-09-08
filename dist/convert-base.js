@@ -1,3 +1,10 @@
+/*!
+ * convert-base - Convert from one base to another: Hex, Binary, Decimal, Octal
+ * @version v0.1.0 - Sun Sep 07 2014
+ * @link https://github.com/pasangsherpa/convert-base
+ * @author Pasang Sherpa <pgyalzen@gmail.com> (https://github.com/pasangsherpa)
+ * @license MIT
+ */
 (function() {
 	'use strict';
 	var ConvertBase = function(bits) {
