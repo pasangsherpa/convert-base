@@ -1,6 +1,6 @@
 /*!
  * convert-base - Convert from one base to another: Hex, Binary, Decimal, Octal
- * @version v0.1.0 - Sun Sep 07 2014
+ * @version v0.1.1 - Mon Sep 08 2014
  * @link https://github.com/pasangsherpa/convert-base
  * @author Pasang Sherpa <pgyalzen@gmail.com> (https://github.com/pasangsherpa)
  * @license MIT
@@ -10,8 +10,14 @@
 	var ConvertBase = function(bits) {
 		return {
 			convert: function convert(number, from, to) {
-				var result = parseInt(number, from).toString(to);
-				if (to === 10) return ~~result;
+				if (from === 16 && typeof number !== 'string') {
+					number = Number(number).toString(16);
+				}
+				var result = parseInt(number, from);
+				if (isNaN(result)) return result;
+				result = result.toString(to);
+
+				if (to === 10) return (~~result);
 				return result;
 			}
 		};

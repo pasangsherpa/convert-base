@@ -23,19 +23,20 @@ $ bower install --save convert-base
 ```js
 var ConvertBase = require('convert-base');
 var converter = new ConvertBase();
-converter.convert(1);
-
+converter.convert(16, 10, 2); // 10000
+converter.convert(0xF, 16, 2); // 1111
 
 ```
 ```js
 <script type="text/javascript" src="https://raw.githubusercontent.com/pasangsherpa/convert-base/master/dist/convert-base.min.js"></script>
 <script type="text/javascript"> 
   	var converter = new ConvertBase();
-	converter.convert(1);
+	converter.convert(16, 10, 2); // 10000
+	converter.convert(0xF, 16, 2); // 1111
 
 </script>
 ```
-
+######Refer to test.js in test directory for more examples.
 
 ## Documentation
 
@@ -48,7 +49,7 @@ Creates an instance of the converter.
 
 #### .convert(number, from, to)
 
-Converts a number from one base to another.
+Converts a number from one base to another. Returns the result as a number for decimal base and string for others.
 
 ##### number
 
