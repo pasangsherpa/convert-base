@@ -3,8 +3,14 @@
 	var ConvertBase = function(bits) {
 		return {
 			convert: function convert(number, from, to) {
-				var result = parseInt(number, from).toString(to).toUpperCase();
-				if (to === 10) return ~~result;
+				if (from === 16 && typeof number !== 'string') {
+					number = Number(number).toString(16);
+				}
+				var result = parseInt(number, from);
+				if (isNaN(result)) return result;
+				result = result.toString(to);
+
+				if (to === 10) return (~~result);
 				return result;
 			}
 		};

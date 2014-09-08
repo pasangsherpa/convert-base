@@ -10,7 +10,7 @@
 	var ConvertBase = function(bits) {
 		return {
 			convert: function convert(number, from, to) {
-				var result = parseInt(number, from).toString(to).toUpperCase();
+				var result = parseInt(number, from).toString(to);
 				if (to === 10) return ~~result;
 				return result;
 			}
