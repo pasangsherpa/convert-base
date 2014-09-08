@@ -30,7 +30,7 @@ converter.convert(0xF, 16, 2); // 1111
 ```js
 <script type="text/javascript" src="https://raw.githubusercontent.com/pasangsherpa/convert-base/master/dist/convert-base.min.js"></script>
 <script type="text/javascript"> 
-  	var converter = new ConvertBase();
+	var converter = new ConvertBase();
 	converter.convert(16, 10, 2); // 10000
 	converter.convert(0xF, 16, 2); // 1111
 
